@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ipplan:
+    image: cent7-ipplan-beta:v01.01
+    container_name: ipplan-beta
+    network_mode: bridge
+    ports:
+      - 8082:80
+    volumes:
+      - /srv/data/ipplan-beta:/var/www/html/ipplan
